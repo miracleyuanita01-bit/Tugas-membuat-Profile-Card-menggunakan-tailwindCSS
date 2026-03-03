@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              light: "#dbe7d8",
+              DEFAULT: "#a3bfa8",
+              dark: "#5f8765",
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-sage-light to-sage">
+
+  <div class="relative bg-white/30 backdrop-blur-lg shadow-2xl rounded-3xl p-8 w-80 text-center transition transform hover:-translate-y-3 hover:shadow-green-300/40">
+
+    <!-- FOTO -->
+    <div class="flex justify-center">
+      <img src="foto.jpg.jpeg"
+     class="w-32 h-32 rounded-full border-4 border-sage shadow-xl hover:scale-105 transition duration-300 object-cover -mt-20"
+     alt="Foto Profile">
+    </div>
+
+    <!-- NAMA -->
+    <h2 class="mt-4 text-2xl font-bold text-sage-dark">
+      Miracle Yuanita M
+    </h2>
+
+    <!-- INFO -->
+    <div class="mt-4 text-gray-700 text-sm space-y-2">
+      <p>📍 <span class="font-semibold">Tempat, Tanggal Lahir:</span> Banjarbaru, 08 Januari 2006</p>
+      <p>🎓 <span class="font-semibold">Kampus:</span> Universitas Islam Kalimantan</p>
+      <p>✍️ <span class="font-semibold">Hobi:</span> Menulis Puisi/Novel, Membaca, Musik</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="mt-6 flex justify-center gap-3">
+      <a href="#" class="bg-sage text-white px-4 py-2 rounded-full text-xs hover:bg-sage-dark transition">
+        Instagram
+      </a>
+      <a href="#" class="bg-sage text-white px-4 py-2 rounded-full text-xs hover:bg-sage-dark transition">
+        TikTok
+      </a>
+      <a href="#" class="bg-sage text-white px-4 py-2 rounded-full text-xs hover:bg-sage-dark transition">
+        GitHub
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
